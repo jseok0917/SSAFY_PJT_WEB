@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSAFIT Video</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/video.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <span id="logo-title">
+                    <a class="navbar-brand" href="/main.html">
+                        <img src="assets/img/logo.png" alt="Bootstrap" width="70" height="54">
+                    </a>SSAFIT GYM
+                </span>
+           
+           
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/main.html">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/video.html">VIDEOS</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">MY PAGE</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/signin.html">SIGN IN</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="d-flex">
+        <section>
+            <div id="video-search"><input type="text" placeholder="Search"></input></div>
+            <div class="d-flex justify-content-start" class="p-3 mb-2 bg-light text-dark">
+                <ul id="exercise-type" class="d-flex justify-content-around">
+                    <li><button type="button" class="btn btn-outline-secondary">All</button></li>
+                    <li><button type="button" class="btn btn-outline-secondary">Whole</button></li>
+                    <li><button type="button" class="btn btn-outline-secondary">Upper</button></li>
+                    <li><button type="button" class="btn btn-outline-secondary">Lower</button></li>
+                    <li><button type="button" class="btn btn-outline-secondary">Abromianal</button></li>
+
+                </ul>
+                <div></div>
+            </div>
+            
+            <div id="video-area" class="row row-cols-1 row-cols-md-4 g-4" class="p-3 mb-2 bg-light text-dark">
+        
+            </div>
+
+        </section>
+        
+        
+
+        <aside>
+            <div>
+                <span><h3>&nbsp;&nbsp;Liked Video</h3></span>
+                <div id="liked-video" class="d-flex flex-column" class="d-flex flex-wrap">
+
+                </div>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer>
+        <p>HYUNSOO CHO & JIMYEONG SEOK<br>
+        <a href="#">ssafy@ssafy.com</a></p>
+    </footer>
+
+    <script src="./js/video.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

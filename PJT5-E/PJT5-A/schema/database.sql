@@ -1,0 +1,3 @@
+CREATE DATABASE ssafit_PJT4A;
+
+USE ssafit_PJT4A;

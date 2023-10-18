@@ -1,0 +1,20 @@
+body {
+    margin : 0;
+    background-color: aliceblue;
+}
+
+
+
+main {
+    height : 100vh;
+}
+
+#signup-box{
+    padding-top: 100px;
+    padding-left: 200px;
+    
+}
+
+.signForm{
+    flex-direction: column;
+}

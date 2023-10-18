@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: PJT3-A
+Bundle-SymbolicName: PJT3-A
+Bundle-Version: 1.0.0.qualifier
+Export-Package: com.ssafy.fit.model.controller,
+ com.ssafy.fit.model.dao,
+ com.ssafy.fit.model.dto,
+ com.ssafy.fit.model.service

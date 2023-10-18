@@ -1,0 +1,44 @@
+li, ui {
+    list-style-type: none;
+}
+
+
+
+section {
+    margin : 0;
+    padding : 0;
+    align-items: center;
+    
+    
+}
+
+main {
+    align-items: center;
+    height : 100vh;
+}
+
+.login-form {
+    margin : 0 50px;
+    padding: 30px 100px;
+    border : 1px solid grey;
+    border-radius: 20px;
+}
+
+.login-form h2 {
+    text-align: center;
+}
+
+#findIdPw {
+    margin: 10px 0;
+    width : 50%;
+    text-align: center;
+}
+
+form input {
+    margin : 10px;
+}
+
+body {
+    background-color: aliceblue;
+}
+

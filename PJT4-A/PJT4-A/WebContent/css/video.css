@@ -1,0 +1,76 @@
+li, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration-line: none;
+    color : black;
+}
+
+a :hover {
+    color : blue;
+}
+
+header > div {
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    margin: 0 75px;
+}
+
+main section {
+    width: 75%;
+    height: 100vh;
+}
+
+#video-search {
+    margin: 10px;
+}
+
+#exercise-type li {
+    margin : 0 0 0 30px;
+}
+
+#video-area {
+    font-size: 10px;
+}
+
+aside div {
+    position: fixed;
+    width : 460px;
+    height : 100%;
+
+}
+
+
+
+#liked-video {
+
+}
+
+#liked-video iframe {
+    margin : 20px;
+    width : 300px;
+    height : 200px;
+    
+
+}
+
+
+aisde :nth-child(2){
+    height: 54px;
+}
+
+main aside {
+    width: 25%;
+}
+
+main > div {
+    margin : 20px;
+}
+
+aside {
+    margin : 50px;
+}
