@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ssafy.fit.model.dao.VideoDao">
+	<select id="selectAll" resultType="Video">
+		SELECT *
+		FROM video;
+	</select>
+	
+	<select id="selectLatestVideo" resultType="Video">
+		SELECT *
+		FROM video
+		ORDER BY date DESC
+		LIMIT 8;
+	</select>
+	
+	<!-- 추후에 검색조건을 넣는 것으로 수정 -->
+	<select id="searchVideo" resultType="Video" parameterType="SearchCondition">
+		SELECT *
+		FROM video
+		WHERE fitPartName = #{searchCondition.fitPartName};
+	</select>
+	
+	<insert id="insertVideo" parameterType="Video">
+		INSERT INTO video (youtubeId, channelName, fitPartName, title, date, viewCnt)
+		VALUES (#{youtubeId}, #{channelName}, #{fitPartName}, NOW(), 0);
+		
+	</insert>
+	
+	<select id="selectOne" resultType="Video" parameterType="String">
+		SELECT *
+		FROM video
+		WHERE youtubeId = #{youtubeId};
+	</select>
+	
+	<update id="updateVideo" parameterType="Video">
+		UPDATE video
+		SET fitPartName = #{fitPartName}, title = #{title}
+		WHERE youtubeId = #{youtubeId};
+	</update>
+	
+	<delete id="deleteVideo" parameterType="String">
+		DELETE FROM video
+		WHERE youtubeId = #{youtubeId};
+	</delete>
+	
+	<update id="updateViewCnt" parameterType="String">
+		UPDATE video
+		SET viewCnt = viewCnt
+		WHERE youtubeId = #{youtubeId};
+	</update>
+	
+
+</mapper>
